@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  app:
+    image: my-mailer-app:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - EMAIL_USER=your_email
+      - EMAIL_PASS=your_password
+    volumes:
+      - ./data:/app/data
+    deploy:
+      replicas: 4
+      update_config:
+        parallelism: 2
+        delay: 10s
+
+volumes:
+  data:
+    driver: local
