@@ -1,3 +1,5 @@
+### Importante en este caso se utilizó un correo OUTLOOK
+
 # Instrucciones para Desplegar la Aplicación con Docker Swarm
 
 Sigue estos pasos para construir y desplegar tu aplicación usando Docker Swarm.
